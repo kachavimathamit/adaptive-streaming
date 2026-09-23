@@ -45,7 +45,9 @@ class NetworkShaper:
         return cls(profile)
 
     def start(self) -> None:
-        self._start = self._clock()
+        """Anchor the profile timeline (idempotent: first call wins)."""
+        if self._start is None:
+            self._start = self._clock()
 
     def current_cap_bps(self) -> float | None:
         """Bandwidth cap in bits/s at the current session time."""
