@@ -1,0 +1,10 @@
+{
+  "name": "stable",
+  "description": "Stable 10 Mbps, 20 ms RTT, no loss",
+  "latency_ms": 20,
+  "packet_loss": 0.0,
+  "tc_profile": "rate 10mbit delay 10ms",
+  "timeline": [
+    {"t": 0, "mbps": 10}
+  ]
+}

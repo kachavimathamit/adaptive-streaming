@@ -1,0 +1,10 @@
+{
+  "name": "high_latency",
+  "description": "5 Mbps with 150 ms one-way latency",
+  "latency_ms": 150,
+  "packet_loss": 0.0,
+  "tc_profile": "rate 5mbit delay 150ms",
+  "timeline": [
+    {"t": 0, "mbps": 5}
+  ]
+}

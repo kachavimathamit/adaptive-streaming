@@ -1,0 +1,17 @@
+{
+  "name": "fluctuating",
+  "description": "Fluctuating bandwidth 10 -> 5 -> 2 -> 7 -> 3 Mbps, variable latency",
+  "latency_ms": 40,
+  "packet_loss": 0.0,
+  "tc_profile": "alternating tbf rates, delay 20-60ms",
+  "timeline": [
+    {"t": 0, "mbps": 10},
+    {"t": 15, "mbps": 5},
+    {"t": 30, "mbps": 2},
+    {"t": 45, "mbps": 7},
+    {"t": 60, "mbps": 3},
+    {"t": 75, "mbps": 9},
+    {"t": 90, "mbps": 4},
+    {"t": 105, "mbps": 6}
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "sudden_drop",
+  "description": "Bandwidth drops 10 -> 2 -> 8 Mbps at t=30s / t=60s, 20-50 ms latency",
+  "latency_ms": 35,
+  "packet_loss": 0.0,
+  "tc_profile": "tbf rate 10mbit burst 32kbit latency 30ms (rewritten at t=30s, t=60s)",
+  "timeline": [
+    {"t": 0, "mbps": 10},
+    {"t": 30, "mbps": 2},
+    {"t": 60, "mbps": 8}
+  ]
+}
